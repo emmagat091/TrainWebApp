@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <af:pageTemplate viewId="/traintemplate.jsf" id="pt1">
+        <f:facet name="body">
+            <af:panelHeader text="panelHeader 1" id="ph1">
+                <f:facet name="context"/>
+                <f:facet name="menuBar">
+                    <af:panelGroupLayout id="pgl1" layout="horizontal">
+                        <af:trainButtonBar value="#{controllerContext.currentViewPort.taskFlowContext.trainModel}"
+                                           id="tbb1"/>
+                        <af:commandButton text="Return to parent flow" id="cb1" action="done"/>
+                    </af:panelGroupLayout>
+                </f:facet>
+                <f:facet name="toolbar"/>
+                <f:facet name="legend"/>
+                <f:facet name="info"/>
+                <af:outputText value="fourth train stop page" id="ot1"/>
+            </af:panelHeader>
+        </f:facet>
+    </af:pageTemplate>
+</ui:composition>

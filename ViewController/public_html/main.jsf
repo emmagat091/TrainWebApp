@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="main.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelStretchLayout topHeight="50px" startWidth="100px" id="psl1">
+                <f:facet name="top"/>
+                <f:facet name="center">
+                    <!-- id="af_twocol_left_full_header_Stretched"   -->
+                    <af:decorativeBox id="psl2">
+                        <f:facet name="center">
+                            <af:panelStretchLayout id="psl3" startWidth="117px">
+                                <f:facet name="center">
+                                    <af:region value="#{bindings.trainflow1.regionModel}" id="r1"/>
+                                </f:facet>
+                                <f:facet name="start">
+                                    <af:panelAccordion id="pa1">
+                                        <af:showDetailItem text="Browse" id="sdi1"/>
+                                        <af:showDetailItem text="Search" id="sdi2"/>
+                                    </af:panelAccordion>
+                                </f:facet>
+                            </af:panelStretchLayout>
+                        </f:facet>
+                        <f:facet name="top"/>
+                    </af:decorativeBox>
+                </f:facet>
+            </af:panelStretchLayout>
+        </af:form>
+    </af:document>
+</f:view>
